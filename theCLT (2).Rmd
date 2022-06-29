@@ -91,6 +91,6 @@ Write a summary paragraph describing what you observed and how it relates to the
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
 
- 
+The first plot is biomodal and appears to have a similar standard deviation and mean to the next two plots. The mean and standard deviation for the second and third appear to be quite similar to each other. Than the fourth to sixth also appear to have similar standard deviations and means. The second and third plots are trimodal. The fourth to sixth are unimodal.  
 
 Then submit the link to your github project  to canvas to complete this assignment.
