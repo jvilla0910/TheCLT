@@ -21,6 +21,8 @@ densityplot(my1000,main="original data")
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
+No it's not unimodal. It's bimodal. There are two peaks. Both peaks are the same size. There are 0 outliners in the plot. The mean is 49. The SD is 30.6. 
+
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
 ```{r}
@@ -31,9 +33,11 @@ x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
 ```
 
+For these data mean = 51.512, std = 26.8849898
+
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
- 
+No the plot isn't unimodal. The plot is trimodal. There is 3 peaks. The 3 peaks are not all the same. The peak in the middle is the largest peak and stands out the most. The two at the side are equal to each other. There are outliners. The mean is 50.3. The SD is 29.1. 
 
 Do this again for 4 random samples
 
