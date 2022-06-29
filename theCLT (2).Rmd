@@ -53,6 +53,16 @@ There are 3 main peaks. There are 2 semi-forming peaksat the side. This plot is 
 
 Then again for 9 random samples
 
+```{r}
+numb = 9
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 9")
+```
+
+This is unimodal. Since there is 1 distinctive peak. It reaches about .029. There is 3 minor peaks. All 4 peaks have different values, none of them are the same size. The mean is 50.2. The SD is 13.5. 
+
 then 16 random samples
 
 finally for 36 random samples.
