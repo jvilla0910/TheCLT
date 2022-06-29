@@ -41,6 +41,16 @@ No the plot isn't unimodal. The plot is trimodal. There is 3 peaks. The 3 peaks 
 
 Do this again for 4 random samples
 
+```{r}
+numb = 4
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 4")
+```
+
+There are 3 main peaks. There are 2 semi-forming peaksat the side. This plot is trimodal because there are 3 distinctive peaks. The main peak (in the middle) is larger than the rest. It reaches about .025. The two at the side are the same size and reach at about .0175. The mean is 50.3. The SD is 20.8. 
+
 Then again for 9 random samples
 
 then 16 random samples
